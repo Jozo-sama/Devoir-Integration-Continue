@@ -1,14 +1,11 @@
-<<<<<<< HEAD
 # Devoir-Integration-Continue
-=======
 # 🎟 EventPass – Site d'achat de tickets en ligne
 
 > Projet d'intégration continue – École Polytechnique de Ouagadougou
 
 ## 📁 Structure du projet
 
-```
-eventpass/
+Devoir-Integration-Continue/
 ├── index.html              # Page d'accueil
 ├── events.html             # Liste de tous les événements
 ├── contact.html            # Formulaire de contact
@@ -25,10 +22,8 @@ eventpass/
 │       └── ci.yml       # Pipeline GitHub Actions
 ├── .htmlvalidate.json      # Config lint HTML
 ├── .stylelintrc.json       # Config lint CSS
+├── .eslint.config.js      # Config lint js
 └── README.md
-```
-
----
 
 ## ✨ Fonctionnalités
 
@@ -39,14 +34,11 @@ eventpass/
 - 📱 **Responsive** : mobile, tablette, desktop
 - 📧 **Formulaire de contact** : validation côté client
 
----
-
 ## 🔀 Stratégie Git
-```
 main                  ← branche principale (protégée)
 └── feature/html-css   ← développement de la partie css html
 └── feature/js         ← développement de la partie javascript
-```
+└── gh-pages         ← déploiement sur github pages
 
 ### Workflow
 1. Créer une branche `feature/ma-feature`
@@ -55,25 +47,23 @@ main                  ← branche principale (protégée)
 4. **Revue de code** par l'autre binôme
 5. **Merge** après validation et succès du pipeline CI
 
----
-
 ## ⚙️ Pipeline CI/CD (GitHub Actions)
 
 Le fichier `.github/workflows/ci.yml` exécute automatiquement :
 
-| Étape | Outil | Déclencheur |
-|-------|-------|-------------|
-| Lint HTML | `html-validate` | Push & PR |
-| Lint CSS | `stylelint` | Push & PR |
-| Validation JS | `eslint` | Push & PR |
-| Déploiement | GitHub Pages | Push sur `main` uniquement |
+| Étape         | Outil           | Déclencheur |
+|---------------|-----------------|-------------|
+| Lint HTML     | `html-validate` | Push & PR |
+| Lint CSS      | `stylelint`     | Push & PR |
+| Validation JS | `eslint`        | Push & PR |
+| Déploiement   | GitHub Pages    | Push sur `main` uniquement |
 
 ---
 ## 👥 Équipe
 
-| Binôme            | Pages assignées |
-|-------------------|----------------|
-| TIENDREBEOGO AXEL | `index.html`, `css/style.css`, `contact.html`,`events.html`  |
+| Binôme            | Pages assignées                                                        |
+|-------------------|------------------------------------------------------------------------|
+| TIENDREBEOGO AXEL | `index.html`, `css/style.css`, `contact.html`,`events.html`            |
 | ZONGO B Josaphat  | `js/app.js`, `js/cart.js`, `js/contact.js`,`js/datat.js`,`js/event.js` |
 
 ---
@@ -83,4 +73,3 @@ Le fichier `.github/workflows/ci.yml` exécute automatiquement :
 - **CSS3** (variables CSS, Grid, Flexbox, animations)
 - **JavaScript** vanilla (ES2020)
 - **GitHub Actions** (CI/CD)
->>>>>>> master
