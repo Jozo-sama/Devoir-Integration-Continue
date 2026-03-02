@@ -168,7 +168,12 @@ button {
   background: var(--primary); border-color: var(--primary); 
 }
 
-.navbar-toggle { display: none; background: none; color: var(--text); font-size: 1.4rem; }
+.navbar-toggle { 
+  display: none; 
+  background: none; 
+  color: var(--text); 
+  font-size: 1.4rem; 
+}
 
 /* ---------- HERO ---------- */
 .hero {
@@ -492,8 +497,14 @@ button {
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to   { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 /* CART */
@@ -846,20 +857,38 @@ button {
 }
 
 @keyframes toastIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to   { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 /* ---------- RESPONSIVE ---------- */
 @media (width <= 900px) {
-  .hero { flex-direction: column; text-align: center; padding-top: 100px; }
-  .hero-sub { margin: 0 auto 36px; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .contact-info { padding-top: 0; }
+  .hero { 
+    flex-direction: column; 
+    text-align: center; 
+    padding-top: 100px; 
+  }
+  .hero-sub { 
+    margin: 0 auto 36px; 
+  }
+  .contact-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .contact-info { 
+    padding-top: 0; 
+  }
 }
 
 @media (width <= 640px) {
-  .navbar-links { display: none; }
+  .navbar-links { 
+    display: none; 
+  }
 
   .navbar-links.open {
     display: flex;
@@ -872,8 +901,21 @@ button {
     gap: 16px;
     z-index: 99;
   }
-  .navbar-toggle { display: block; }
-  .hero-visual { display: none; }
-  .footer { flex-direction: column; text-align: center; }
-  .filters-row { flex-direction: column; }
+
+  .navbar-toggle { 
+    display: block; 
+  }
+
+  .hero-visual { 
+    display: none; 
+  }
+
+  .footer { 
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .filters-row { 
+    flex-direction: column; 
+  }
 }
