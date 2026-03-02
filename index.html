@@ -18,10 +18,10 @@
       <a href="events.html">Événements</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button class="navbar__cart" id="cartBtn" aria-label="Panier">
+    <button class="navbar__cart" id="cartBtn" aria-label="Panier" type="button">
       🎟 <span id="cartCount">0</span>
     </button>
-    <button class="navbar__toggle" id="menuToggle" aria-label="Menu">☰</button>
+    <button class="navbar__toggle" id="menuToggle" aria-label="Menu" type="button">☰</button>
   </header>
 
   <!-- ====== HERO ====== -->
@@ -61,13 +61,13 @@
   <!-- ====== MODAL PANIER ====== -->
   <div class="modal-overlay" id="cartModal">
     <div class="modal">
-      <button class="modal__close" id="closeCart">✕</button>
+      <button class="modal__close" id="closeCart" type="button">✕</button>
       <h2>🛒 Mon Panier</h2>
       <div id="cartItems" class="cart-items"></div>
       <div class="cart-total">
         Total : <strong id="cartTotal">0 FCFA</strong>
       </div>
-      <button class="btn btn--primary" id="checkoutBtn">Procéder au paiement</button>
+      <button class="btn btn--primary" id="checkoutBtn" type="button">Procéder au paiement</button>
     </div>
   </div>
 
@@ -77,7 +77,7 @@
       <div class="confirm-icon">✅</div>
       <h2>Commande confirmée !</h2>
       <p>Votre ticket a été réservé avec succès.<br/>Un e-mail de confirmation vous sera envoyé.</p>
-      <button class="btn btn--primary" id="closeConfirm">Retour à l'accueil</button>
+      <button class="btn btn--primary" id="closeConfirm" type="button">Retour à l'accueil</button>
     </div>
   </div>
 
