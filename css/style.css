@@ -871,9 +871,7 @@ button {
 
 /* ---------- RESPONSIVE ---------- */
 @media (width <= 900px) {
-
   .hero { 
-    
     flex-direction: column; 
     text-align: center; 
     padding-top: 100px; 
