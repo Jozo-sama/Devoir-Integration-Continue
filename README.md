@@ -1,16 +1,9 @@
 <<<<<<< HEAD
 # Devoir-Integration-Continue
-Devoir d'intégration continue
 =======
 # 🎟 EventPass – Site d'achat de tickets en ligne
 
 > Projet d'intégration continue – École Polytechnique de Ouagadougou
-
-## 🌐 Site déployé
-
-👉 **[https://[votre-username].github.io/eventpass](https://[votre-username].github.io/eventpass)**
-
----
 
 ## 📁 Structure du projet
 
@@ -49,13 +42,10 @@ eventpass/
 ---
 
 ## 🔀 Stratégie Git
-
 ```
 main                  ← branche principale (protégée)
-└── feature/accueil   ← développement page accueil
-└── feature/events    ← développement page événements
-└── feature/contact   ← développement page contact
-└── feature/panier    ← développement du panier
+└── feature/html-css   ← développement de la partie css html
+└── feature/js         ← développement de la partie javascript
 ```
 
 ### Workflow
@@ -69,7 +59,7 @@ main                  ← branche principale (protégée)
 
 ## ⚙️ Pipeline CI/CD (GitHub Actions)
 
-Le fichier `.github/workflows/ci-cd.yml` exécute automatiquement :
+Le fichier `.github/workflows/ci.yml` exécute automatiquement :
 
 | Étape | Outil | Déclencheur |
 |-------|-------|-------------|
@@ -79,31 +69,18 @@ Le fichier `.github/workflows/ci-cd.yml` exécute automatiquement :
 | Déploiement | GitHub Pages | Push sur `main` uniquement |
 
 ---
-
-## 🚀 Déploiement GitHub Pages
-
-### Étapes d'activation
-
-1. Aller dans **Settings** → **Pages**
-2. Source : **GitHub Actions**
-3. Pousser sur `main` → le déploiement se lance automatiquement
-
----
-
 ## 👥 Équipe
 
-| Binôme | Pages assignées |
-|--------|----------------|
-| Binôme 1 | `index.html`, `css/style.css`, `js/data.js` |
-| Binôme 2 | `events.html`, `contact.html`, `js/cart.js` |
+| Binôme            | Pages assignées |
+|-------------------|----------------|
+| TIENDREBEOGO AXEL | `index.html`, `css/style.css`, `contact.html`,`events.html`  |
+| ZONGO B Josaphat  | `js/app.js`, `js/cart.js`, `js/contact.js`,`js/datat.js`,`js/event.js` |
 
 ---
 
 ## 📋 Technologies
-
 - **HTML5** sémantique
 - **CSS3** (variables CSS, Grid, Flexbox, animations)
 - **JavaScript** vanilla (ES2020)
 - **GitHub Actions** (CI/CD)
-- **GitHub Pages** (hébergement)
 >>>>>>> master
