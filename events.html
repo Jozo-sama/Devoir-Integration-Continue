@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Événements – EventPass</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-logo"><a href="index.html">Event<span>Pass</span></a></div>
+    <nav class="navbar-links">
+      <a href="index.html">Accueil</a>
+      <a href="events.html" class="active">Événements</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="navbar-cart" id="cartBtn" aria-label="Panier" type="button">
+      🎟 <span id="cartCount">0</span>
+    </button>
+    <button class="navbar-toggle" id="menuToggle" aria-label="Menu" type="button">☰</button>
+  </header>
+
+  <section class="page-header">
+    <h1>Tous les <span>Événements</span></h1>
+    <p>Trouvez et réservez vos billets facilement</p>
+  </section>
+
+  <!-- FILTRES -->
+  <section class="filters section">
+    <div class="filters-row">
+      <input type="text" id="searchInput" class="filters-search" placeholder="🔍 Rechercher un événement..." />
+      <select id="categoryFilter" class="filters-select">
+        <option value="">Toutes catégories</option>
+        <option value="Concert">🎵 Concert</option>
+        <option value="Festival">🎪 Festival</option>
+        <option value="Conférence">💼 Conférence</option>
+        <option value="Sport">⚽ Sport</option>
+        <option value="Spectacle">🎭 Spectacle</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- LISTE ÉVÉNEMENTS -->
+  <section class="section">
+    <div class="events-grid" id="eventsGrid">
+      <!-- Filled by JS -->
+    </div>
+    <p id="noResult" class="no-result" style="display:none;">Aucun événement trouvé.</p>
+  </section>
+
+  <!-- MODAL DÉTAIL -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="modal modal-detail">
+      <button class="modal-close" id="closeDetail" type="button">✕</button>
+      <div id="detailContent"></div>
+    </div>
+  </div>
+
+  <!-- MODAL PANIER -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="modal">
+      <button class="modal-close" id="closeCart" type="button">✕</button>
+      <h2>🛒 Mon Panier</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-total">Total : <strong id="cartTotal">0 FCFA</strong></div>
+      <button class="btn btn-primary" id="checkoutBtn" type="button">Procéder au paiement</button>
+    </div>
+  </div>
+
+  <!-- MODAL CONFIRMATION -->
+  <div class="modal-overlay" id="confirmModal">
+    <div class="modal modal-confirm">
+      <div class="confirm-icon">✅</div>
+      <h2>Commande confirmée !</h2>
+      <p>Votre ticket a été réservé avec succès.<br/>Un e-mail de confirmation vous sera envoyé.</p>
+      <button class="btn btn-primary" id="closeConfirm" type="button">Retour à l'accueil</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-brand">Event<span>Pass</span></div>
+    <p>© 2025 EventPass – Tous droits réservés</p>
+    <div class="footer-links">
+      <a href="events.html">Événements</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>
