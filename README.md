@@ -4,7 +4,7 @@
 > Projet d'intégration continue – École Polytechnique de Ouagadougou
 
 ## 📁 Structure du projet
-
+```
 Devoir-Integration-Continue/
 ├── index.html              # Page d'accueil
 ├── events.html             # Liste de tous les événements
@@ -24,7 +24,7 @@ Devoir-Integration-Continue/
 ├── .stylelintrc.json       # Config lint CSS
 ├── .eslint.config.js      # Config lint js
 └── README.md
-
+```
 ## ✨ Fonctionnalités
 
 - 🏠 **Page d'accueil** : hero section, 3 événements à la une
@@ -35,11 +35,12 @@ Devoir-Integration-Continue/
 - 📧 **Formulaire de contact** : validation côté client
 
 ## 🔀 Stratégie Git
+```
 main                  ← branche principale (protégée)
 └── feature/html-css   ← développement de la partie css html
 └── feature/js         ← développement de la partie javascript
 └── gh-pages         ← déploiement sur github pages
-
+```
 ### Workflow
 1. Créer une branche `feature/ma-feature`
 2. Développer et commiter régulièrement
