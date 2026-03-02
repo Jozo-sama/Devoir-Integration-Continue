@@ -1,4 +1,4 @@
-# .github/workflows/ci-cd.yml
+# .github/workflows/ci.yml
 # Pipeline CI/CD : Lint HTML/CSS + Déploiement GitHub Pages
 
 name: CI/CD – Lint & Deploy
@@ -74,7 +74,7 @@ jobs:
         run: npm install -g eslint
 
       - name: Lancer ESLint
-        run: eslint "js/**/*.js" --env browser --env es2020 --rule "no-undef: off"
+        run: eslint "js/**/*.js"
 
   # ─────────────────────────────────────────
   # JOB 4 : DÉPLOIEMENT (seulement sur main)

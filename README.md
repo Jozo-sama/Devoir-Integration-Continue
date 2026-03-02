@@ -22,7 +22,7 @@ eventpass/
 │   └── contact.js          # Script formulaire contact
 ├── .github/
 │   └── workflows/
-│       └── ci-cd.yml       # Pipeline GitHub Actions
+│       └── ci.yml       # Pipeline GitHub Actions
 ├── .htmlvalidate.json      # Config lint HTML
 ├── .stylelintrc.json       # Config lint CSS
 └── README.md
