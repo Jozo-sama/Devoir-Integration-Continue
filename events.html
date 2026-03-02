@@ -11,16 +11,16 @@
 <body>
 
   <header class="navbar">
-    <div class="navbar__logo"><a href="index.html">Event<span>Pass</span></a></div>
-    <nav class="navbar__links">
+    <div class="navbar-logo"><a href="index.html">Event<span>Pass</span></a></div>
+    <nav class="navbar-links">
       <a href="index.html">Accueil</a>
       <a href="events.html" class="active">Événements</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button class="navbar__cart" id="cartBtn" aria-label="Panier" type="button">
+    <button class="navbar-cart" id="cartBtn" aria-label="Panier" type="button">
       🎟 <span id="cartCount">0</span>
     </button>
-    <button class="navbar__toggle" id="menuToggle" aria-label="Menu" type="button">☰</button>
+    <button class="navbar-toggle" id="menuToggle" aria-label="Menu" type="button">☰</button>
   </header>
 
   <section class="page-header">
@@ -30,9 +30,9 @@
 
   <!-- FILTRES -->
   <section class="filters section">
-    <div class="filters__row">
-      <input type="text" id="searchInput" class="filters__search" placeholder="🔍 Rechercher un événement..." />
-      <select id="categoryFilter" class="filters__select">
+    <div class="filters-row">
+      <input type="text" id="searchInput" class="filters-search" placeholder="🔍 Rechercher un événement..." />
+      <select id="categoryFilter" class="filters-select">
         <option value="">Toutes catégories</option>
         <option value="Concert">🎵 Concert</option>
         <option value="Festival">🎪 Festival</option>
@@ -54,7 +54,7 @@
   <!-- MODAL DÉTAIL -->
   <div class="modal-overlay" id="detailModal">
     <div class="modal modal--detail">
-      <button class="modal__close" id="closeDetail" type="button">✕</button>
+      <button class="modal-close" id="closeDetail" type="button">✕</button>
       <div id="detailContent"></div>
     </div>
   </div>
@@ -62,7 +62,7 @@
   <!-- MODAL PANIER -->
   <div class="modal-overlay" id="cartModal">
     <div class="modal">
-      <button class="modal__close" id="closeCart" type="button">✕</button>
+      <button class="modal-close" id="closeCart" type="button">✕</button>
       <h2>🛒 Mon Panier</h2>
       <div id="cartItems" class="cart-items"></div>
       <div class="cart-total">Total : <strong id="cartTotal">0 FCFA</strong></div>
@@ -81,9 +81,9 @@
   </div>
 
   <footer class="footer">
-    <div class="footer__brand">Event<span>Pass</span></div>
+    <div class="footer-brand">Event<span>Pass</span></div>
     <p>© 2025 EventPass – Tous droits réservés</p>
-    <div class="footer__links">
+    <div class="footer-links">
       <a href="events.html">Événements</a>
       <a href="contact.html">Contact</a>
     </div>
