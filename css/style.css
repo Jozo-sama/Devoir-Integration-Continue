@@ -469,7 +469,7 @@ button {
   overflow-y: auto;
 }
 
-.modal--detail { 
+.modal-detail { 
   max-width: 560px; 
 }
 
@@ -496,7 +496,7 @@ button {
   border-color: var(--primary); 
 }
 
-@keyframes slideUp {
+@keyframes slide-Up {
   from { 
     opacity: 0; 
     transform: translateY(30px); 
@@ -856,7 +856,7 @@ button {
   pointer-events: none;
 }
 
-@keyframes toastIn {
+@keyframes toast-In {
   from { 
     opacity: 0; 
     transform: translateY(20px); 
@@ -869,17 +869,21 @@ button {
 
 /* ---------- RESPONSIVE ---------- */
 @media (width <= 900px) {
+
   .hero { 
     flex-direction: column; 
     text-align: center; 
     padding-top: 100px; 
   }
+
   .hero-sub { 
     margin: 0 auto 36px; 
   }
+
   .contact-grid { 
     grid-template-columns: 1fr; 
   }
+
   .contact-info { 
     padding-top: 0; 
   }
