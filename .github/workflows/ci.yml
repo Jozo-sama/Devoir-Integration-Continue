@@ -75,3 +75,23 @@ jobs:
 
       - name: Lancer ESLint
         run: eslint "js/**/*.js"
+
+# ─────────────────────────────────────────
+  # JOB 4 : DÉPLOIEMENT GITHUB PAGES
+  # ─────────────────────────────────────────
+  deploy:
+    name: 🚀 Déploiement GitHub Pages
+    runs-on: ubuntu-latest
+    needs: [lint-html, lint-css, validate-js]  # attend que les 3 jobs passent
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+      - name: Déployer sur GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./          # racine du projet = dossier à déployer
+          publish_branch: gh-pages
